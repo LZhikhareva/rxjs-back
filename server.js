@@ -26,4 +26,5 @@ app.get('/messages/unread', (req, res) => {
     messages
   });
 });
-app.listen(3000, () => console.log('Сервер запущен на порту 3000'));
+const port = process.env.PORT || 3000;
+app.listen(port);
